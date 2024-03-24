@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
+  <title>Home</title>
+  <link href="./assets/styles.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <div id="navbar-placeholder"></div>
+
+
+  <div class="container mt-4">
+    <h2>Shorten Your URL</h2>
+    <form id="urlShortenForm">
+      <div class="mb-3">
+        <label for="originalUrl" class="form-label">Enter URL to shorten</label>
+        <input type="url" class="form-control" id="originalUrl" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Shorten URL</button>
+    </form>
+  </div>
+
+  <div class="container mt-5">
+    <h3>Your Shortened URLs</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Original URL</th>
+          <th scope="col">Shortened URL key</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="urlList">
+        <!-- Dynamic rows will be inserted here based on the user's URLs -->
+      </tbody>
+    </table>
+  </div>
+
+
+  <footer class="footer bg-light text-center text-lg-start mt-auto">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">CUTTER</h5>
+          <p>Address: 1234 Street Name, City Name, Country</p>
+          <p>Email: contact@example.com</p>
+          <p>Phone: +123 456 7890</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3 footer-bottom">
+      © 2024 CUTTER. All rights reserved.
+    </div>
+  </footer>
+
+
+  <!-- Optional JavaScript and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/insert-components.js"></script>
+
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
